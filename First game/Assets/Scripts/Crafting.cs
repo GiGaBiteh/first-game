@@ -9,10 +9,18 @@ using UnityEngine.EventSystems;
 
 public class Crafting : MonoBehaviour
 {
-    public GameObject stationsParent;
-    public GameObject recipesParent;
+    public GameObject stationsParent, recipesParent, ingredientsBox;
+    GameObject currentObject;
+
+    void Update()
+    {
+        if (ingredientsBox.transform.childCount > 0) ingredientsBox.transform.position = Input.mousePosition;
+        else ingredientsBox.transform.position = new Vector2(2000, 2000);
+    }
     public void checkStations(string stationType)
     {
+        //Do something about the extra crafting recipe things, it keeps instantiating recipes into the ingredientbox, maybe if there is mouse input, reset the ingredientbox
+
         //Deactivate all the recipes, the right ones are added below
         foreach (Transform child in recipesParent.transform)
         {
@@ -51,15 +59,25 @@ public class Crafting : MonoBehaviour
         //Loop through the results and get the right crafting recipe with the recipe tag
         foreach (RaycastResult result in results)
         {
-            if (result.gameObject.tag == "Recipe")
+            //Check if the object is of recipe tag and if the result is already saved
+            if (result.gameObject.tag == "Recipe" && currentObject != result.gameObject)
             {
+                //Save the result to prevent looping, needs to be set back in remove function
+                currentObject = result.gameObject;
                 GameObject[] ingredients = result.gameObject.GetComponent<Ingredients>().ingredients;
-                foreach(GameObject ingredient in ingredients){
-                    //This happens every frame, to check wether you hover over a new object, save the object, if the next object is the same as the current object, stop the function
-                    //Otherwise continue with the function with the new object. DO THIS BEFORE DOING THE NEXT ONE
-
-                    //For every ingredient instantiate some kind of slider (without the slider function) next to the crafting or onto some object assigned to your mouse
+                foreach (GameObject ingredient in ingredients)
+                {
+                    Instantiate(ingredient, ingredientsBox.transform);
                 }
+            }
+        }
+        //If the result of the raycast to UI objects is less or is 0, remove all the children in the ingredientBox
+        if (results.Count <= 0)
+        {
+            currentObject = null;
+            foreach (Transform child in ingredientsBox.transform)
+            {
+                Destroy(child.gameObject);
             }
         }
     }

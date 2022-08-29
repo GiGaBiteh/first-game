@@ -24,19 +24,20 @@ public class UIRaycast : MonoBehaviour
     public Crafting craftingReference;
 
     //Raycast
+    //Some raycasts might only be applied if the mouse is over a gameObject, others, like hovering, always need to check where the mouse is.
     void Update()
     {
+        //Default stuff (getting the results)
+        m_PointerEventData = new PointerEventData(m_EventSystem);
+        m_PointerEventData.position = Input.mousePosition;
+        List<RaycastResult> results = new List<RaycastResult>();
+        m_Raycaster.Raycast(m_PointerEventData, results);
+
+        //Hovering
+        craftingReference.hoverRecipe(results);
+
         if (EventSystem.current.IsPointerOverGameObject())
         {
-            //Default stuff (getting the results)
-            m_PointerEventData = new PointerEventData(m_EventSystem);
-            m_PointerEventData.position = Input.mousePosition;
-            List<RaycastResult> results = new List<RaycastResult>();
-            m_Raycaster.Raycast(m_PointerEventData, results);
-
-            //Hovering
-            craftingReference.hoverRecipe(results);
-
             //Mouse clicks
             if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
             {
