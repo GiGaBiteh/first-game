@@ -1,0 +1,89 @@
+/////////////////////////////////////////////////////
+//TODO'S -> IDEAS ARE ALSO PUT HERE UNDER THE I.NUM// POEPVLEK
+/////////////////////////////////////////////////////
+
+1. Zoek uit hoe lighting werkt in 2D
+2. Begin met ruletile voor ijs
+3. Maak het zo dat wanneer je over een crafting recipe hovert, je de recipe kan zien in UI
+4. Maak het zo dat wanneer je vlakbij een crafting station bent, dat er recipes bij de crafting scrolling komen die je kan maken
+5. Maak een communicator met de aarde, dit werkt als een tutorial, je kan kijken wat je kan craften met welke materiaal enzo, tips krijgen etc.
+6. Maak een schets voor hoe de wereld er uit komt te zien.
+7. Maak alle block textures (meteor, silicone, stone, copper, snow)
+8. Maak de player mooier met textures en animations
+9. Maak de spaceship mooi, met een texture i.p.v meerdere gameobjects, deze moeten alleen gebruikt worden voor de collision
+10. Maak maximum reach voor het breken en plaatsen van blocks
+
+I.1 Create some kind of multi block structure in which you can replace oxygen, allows you to stay away from spaceship
+I.2 Create a story template
+I.3 Energy (solar geothermal etc. this is probably pretty hard)
+I.4 Interactable chests -> mee begonnen maar best wel fucking KUT, vooral meerdere chests
+I.5 Lighting maken
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//Als je klaar met invullen bent, doe iets leuks! Pak wat lekkers of ga lekker games spelen!//
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+THINGS THAT ARE NOW FINISHED
+1. The creating of the planning and todo list, remember to check this every time you log on to the pc
+2. Creating the unity project
+3. Player with basic movement and a basic tilemap
+4. Create a tile breaking script
+5. Create a tile placing script
+6. Instantiate broken tiles (ground items)
+7. Maak het zodat geinstantieerde items vallen, stuiteren, etc. (Rigidbody2D)
+8. Visual studio code with unit (Allows autocomplete and easy access to files)
+9. Maak het zodat deze items rotaten en bewegen op een random manier wanneer ze gemaakt worden
+10. Maak een image van ijs, deze hoeft nog geen ruletile te zijn, maak daarna een klein platform ermee
+11. Maak een ui voor een hotbar
+12. Maak het zodat de ui slots heeft voor items, hier kun je items in doen
+13. Maak een volledige werkende inventory
+14. Een timer voor zuurstof is ook belangrijk om te maken
+15. Maak een sprite voor een tool zoals een pickaxe
+16. Maak een tijdelijk spaceship ruimte, hier krijg je zuurstof enzo is handig om alvast te maken
+17. Chest ui maken
+18. Je moet dingen in je inventory kunnen slepen
+19. Stack items when clicking on them in inventory
+20. Inventory stacking
+21. Placing blocks from inventory
+22. Je moet dingen uit je inventory kunnen droppen
+23. Beginnen met ruletile, beste om dit snel te doen zodat je later niet veel dingen hoeft te veranderen
+24. Beginnen met ores maken en die ergens op de map zetten
+25. Oxygen timer ui
+26. Oxygen functionality
+27. Get small amount of items when right clicking on item inside inventory, for better inventory management
+28. Reach detection with colliders
+29. Maak een crafting UI met scrolling
+30. 
+31. 
+32. 
+33. 
+34. 
+35. 
+36. 
+37. 
+38. 
+39. 
+40. 
+
+/////////////////////
+//Story of the game//
+/////////////////////
+You're on a mining mission near orbiting jupiter, asteroids have been detected closeby, suddenly, 
+two big asteroids crashinto each other, debris of the explosion hits your spaceship and you're spinning violenty, 
+the ability of the spaceship to stay into orbit with jupiter fails, you try your best to take control of the spaceship
+you were able to crash onto a nearby moon, whilst falling through the atmosphere a team on earth gathered information
+about the planet, when you finally landed, you make contact with earth, they ask about you and your possibly existing
+crewmate. They tell you to look around and check the damage of the spaceship. After looking, you contact them again
+and tell them the engine is broken, and some other things as well. They tell you that those things could be repaired
+with the materials hosted by callisto. Turns out it was a mining mission after all.
+
+Undeground you can find the remains of an old civilization
+there are underground biomes, and enough different blocks to build your own colony here, you can either choose to
+go home or to build your civilization here.
+
+One of the problems of callisto is energy, as it is a cold planet, you'll have to dig deep for geothermal energy.
+Solar panels could be an option.
+
+//Dingen die ik niet weet hoe ik dat moet doen:
+
+1. Maak het moeilijker om een blok te breken (met breaking sprites bijvoorbeeld)
