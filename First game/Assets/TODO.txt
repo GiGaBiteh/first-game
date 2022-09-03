@@ -1,17 +1,15 @@
 /////////////////////////////////////////////////////
-//TODO'S -> IDEAS ARE ALSO PUT HERE UNDER THE I.NUM// POEPVLEK
+//TODO'S -> IDEAS ARE ALSO PUT HERE UNDER THE I.NUM//
 /////////////////////////////////////////////////////
 
+Begin met maximum reach
+
 1. Zoek uit hoe lighting werkt in 2D
-2. Begin met ruletile voor ijs
-3. Maak het zo dat wanneer je over een crafting recipe hovert, je de recipe kan zien in UI
-4. Maak het zo dat wanneer je vlakbij een crafting station bent, dat er recipes bij de crafting scrolling komen die je kan maken
-5. Maak een communicator met de aarde, dit werkt als een tutorial, je kan kijken wat je kan craften met welke materiaal enzo, tips krijgen etc.
-6. Maak een schets voor hoe de wereld er uit komt te zien.
-7. Maak alle block textures (meteor, silicone, stone, copper, snow)
-8. Maak de player mooier met textures en animations
-9. Maak de spaceship mooi, met een texture i.p.v meerdere gameobjects, deze moeten alleen gebruikt worden voor de collision
-10. Maak maximum reach voor het breken en plaatsen van blocks
+2. Maak een communicator met de aarde, dit werkt als een tutorial, je kan kijken wat je kan craften met welke materiaal enzo, tips krijgen etc.
+3. Maak een schets voor hoe de wereld er uit komt te zien.
+4. Maak alle block textures (meteor, silicone, stone, copper, snow)
+5. Maak de spaceship mooi, met een texture i.p.v meerdere gameobjects, deze moeten alleen gebruikt worden voor de collision
+6. Maak maximum reach voor het breken en plaatsen van blocks
 
 I.1 Create some kind of multi block structure in which you can replace oxygen, allows you to stay away from spaceship
 I.2 Create a story template
@@ -53,10 +51,10 @@ THINGS THAT ARE NOW FINISHED
 27. Get small amount of items when right clicking on item inside inventory, for better inventory management
 28. Reach detection with colliders
 29. Maak een crafting UI met scrolling
-30. 
-31. 
-32. 
-33. 
+30. Begin met ruletile voor ijs
+31. Player animation
+32. Maak het zo dat wanneer je over een crafting recipe hovert, je de recipe kan zien in UI
+33. Maak het zo dat wanneer je vlakbij een crafting station bent, dat er recipes bij de crafting scrolling komen die je kan maken
 34. 
 35. 
 36. 

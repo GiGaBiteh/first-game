@@ -89,7 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4096b850be83e1d41ade4769b7bc41a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedTile: {fileID: 11400000, guid: f5e7ae51dc8539d4e8471e1fff57faf2, type: 2}
+  selectedTile: {fileID: 11400000, guid: 4e103030de1e3744991eb744f7da8501, type: 2}
   groundItem: {fileID: 3705082511689951498, guid: ea3b67b9e92fcba40b033c426d9e066b,
     type: 3}
   stack: 0
